@@ -13,7 +13,23 @@
          <lastmod>2026-04-03</lastmod>
     </url>
     <url>
+         <loc>https://pulseroute.dev/benchmarks/</loc>
+         <lastmod>2026-04-03</lastmod>
+    </url>
+    <url>
+         <loc>https://pulseroute.dev/comparison/</loc>
+         <lastmod>2026-04-03</lastmod>
+    </url>
+    <url>
          <loc>https://pulseroute.dev/deployment/</loc>
+         <lastmod>2026-04-03</lastmod>
+    </url>
+    <url>
+         <loc>https://pulseroute.dev/faq/</loc>
+         <lastmod>2026-04-03</lastmod>
+    </url>
+    <url>
+         <loc>https://pulseroute.dev/how-detection-works/</loc>
          <lastmod>2026-04-03</lastmod>
     </url>
     <url>
@@ -38,6 +54,10 @@
     </url>
     <url>
          <loc>https://pulseroute.dev/status-page/</loc>
+         <lastmod>2026-04-03</lastmod>
+    </url>
+    <url>
+         <loc>https://pulseroute.dev/why-pulseroute/</loc>
          <lastmod>2026-04-03</lastmod>
     </url>
 </urlset>

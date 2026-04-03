@@ -10,13 +10,13 @@
       
       
       
-        <link rel="canonical" href="https://pulseroute.dev/architecture/">
+        <link rel="canonical" href="https://pulseroute.dev/why-pulseroute/">
       
       
-        <link rel="prev" href="../how-detection-works/">
+        <link rel="prev" href="..">
       
       
-        <link rel="next" href="../benchmarks/">
+        <link rel="next" href="../how-detection-works/">
       
       
         
@@ -27,7 +27,7 @@
     
     
       
-        <title>Architecture - PulseRoute</title>
+        <title>Why PulseRoute - PulseRoute</title>
       
     
     
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#architecture" class="md-skip">
+        <a href="#why-pulseroute" class="md-skip">
           Skip to content
         </a>
       
@@ -114,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Architecture
+              Why PulseRoute
             
           </span>
         </div>
@@ -260,10 +260,37 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../why-pulseroute/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Why PulseRoute
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -279,6 +306,120 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#the-cost-of-slow-detection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Cost of Slow Detection
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#simulation-results" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Simulation Results
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Simulation Results">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#scenario-1-sudden-processor-outage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Scenario 1: Sudden Processor Outage
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scenario-2-gradual-degradation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Scenario 2: Gradual Degradation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scenario-3-continuous-optimization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Scenario 3: Continuous Optimization
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#revenue-impact" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Revenue Impact
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reactive-vs-predictive-timeline" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reactive vs. Predictive Timeline
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#shadow-mode-see-before-you-commit" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Shadow Mode: See Before You Commit
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -314,37 +455,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Architecture
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../architecture/" class="md-nav__link">
         
   
   
@@ -360,125 +474,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#system-overview" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        System Overview
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#tier-1-sentinel-health-based-failover" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Tier 1: Sentinel (Health-Based Failover)
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#tier-2-foresight-predictive-failover" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Tier 2: Foresight (Predictive Failover)
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#tier-3-autopilot-adaptive-optimization" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Tier 3: Autopilot (Adaptive Optimization)
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#how-the-tiers-work-together" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        How the Tiers Work Together
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#routing-rules" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Routing Rules
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#multi-tenancy" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Multi-Tenancy
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#runtime-configuration" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Runtime Configuration
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#shadow-mode" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Shadow Mode
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -780,10 +775,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#system-overview" class="md-nav__link">
+  <a href="#the-cost-of-slow-detection" class="md-nav__link">
     <span class="md-ellipsis">
       
-        System Overview
+        The Cost of Slow Detection
       
     </span>
   </a>
@@ -791,10 +786,60 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#tier-1-sentinel-health-based-failover" class="md-nav__link">
+  <a href="#simulation-results" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Tier 1: Sentinel (Health-Based Failover)
+        Simulation Results
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Simulation Results">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#scenario-1-sudden-processor-outage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Scenario 1: Sudden Processor Outage
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scenario-2-gradual-degradation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Scenario 2: Gradual Degradation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scenario-3-continuous-optimization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Scenario 3: Continuous Optimization
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#revenue-impact" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Revenue Impact
       
     </span>
   </a>
@@ -802,10 +847,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#tier-2-foresight-predictive-failover" class="md-nav__link">
+  <a href="#reactive-vs-predictive-timeline" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Tier 2: Foresight (Predictive Failover)
+        Reactive vs. Predictive Timeline
       
     </span>
   </a>
@@ -813,65 +858,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#tier-3-autopilot-adaptive-optimization" class="md-nav__link">
+  <a href="#shadow-mode-see-before-you-commit" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Tier 3: Autopilot (Adaptive Optimization)
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#how-the-tiers-work-together" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        How the Tiers Work Together
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#routing-rules" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Routing Rules
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#multi-tenancy" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Multi-Tenancy
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#runtime-configuration" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Runtime Configuration
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#shadow-mode" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Shadow Mode
+        Shadow Mode: See Before You Commit
       
     </span>
   </a>
@@ -895,112 +885,195 @@
 
 
 
-<h1 id="architecture">Architecture<a class="headerlink" href="#architecture" title="Permanent link">&para;</a></h1>
-<p>PulseRoute is a 3-tier payment routing engine. Each tier adds intelligence on top of the previous one, and all three can be enabled or disabled at runtime.</p>
-<h2 id="system-overview">System Overview<a class="headerlink" href="#system-overview" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>┌─────────────────────────────────────────────────────────────┐
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>│                      Your Payment Service                    │
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>│                                                              │
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>│   ┌──────────┐     ┌──────────┐     ┌──────────────────┐   │
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>│   │ SDK      │────&gt;│ PulseRoute│────&gt;│ Payment Processor │   │
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>│   │ Client   │&lt;────│ API       │     │ (Stripe, Adyen..) │   │
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>│   └──────────┘     └──────────┘     └──────────────────┘   │
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>│        │                │                                    │
-<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>│        │ report_outcome │ evaluate_all()                     │
-<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>│        └────────────────┘                                    │
-<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>└─────────────────────────────────────────────────────────────┘
+<h1 id="why-pulseroute">Why PulseRoute<a class="headerlink" href="#why-pulseroute" title="Permanent link">&para;</a></h1>
+<p>Every payment processor has outages. The question isn't whether your processor will fail — it's how fast you detect it and how much revenue you lose before traffic moves.</p>
+<h2 id="the-cost-of-slow-detection">The Cost of Slow Detection<a class="headerlink" href="#the-cost-of-slow-detection" title="Permanent link">&para;</a></h2>
+<p>When a processor starts failing, every second of delay costs you transactions. Here's what a typical outage timeline looks like:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>                          Processor A Outage Begins
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>                                    │
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>                                    ▼
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>  ┌──────────┬──────────┬──────────┬──────────┬──────────┐
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>  │ Healthy  │ Degrading │ Outage   │ Recovery │ Healthy  │
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>  │          │          │          │          │          │
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>  │ 98% SR   │ 92%→80%  │ 15% SR   │ 80%→95%  │ 98% SR   │
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>  └──────────┴──────────┴──────────┴──────────┴──────────┘
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>                  │                       │
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>         Without PulseRoute:      With PulseRoute:
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>         You find out here ──┐    Traffic shifted here ──┐
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>         (15-30 min later)   │    (within seconds)       │
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>                             ▼                           ▼
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>                      ~450 failed txns            ~12 failed txns
 </code></pre></div>
-<p><strong>Pre-transaction:</strong> Your service calls <code>POST /v1/route</code> (or <code>sdk.getRoute()</code>) to get a routing decision. PulseRoute returns which processor to use and a traffic weight.</p>
-<p><strong>Post-transaction:</strong> Your service calls <code>POST /v1/outcome</code> (or <code>sdk.reportOutcome()</code>) with the result. PulseRoute uses this data to continuously improve routing decisions.</p>
-<h2 id="tier-1-sentinel-health-based-failover">Tier 1: Sentinel (Health-Based Failover)<a class="headerlink" href="#tier-1-sentinel-health-based-failover" title="Permanent link">&para;</a></h2>
-<p>The foundation. Monitors processor health in real-time using transaction outcomes.</p>
-<p><strong>What it does:</strong></p>
-<ul>
-<li>Tracks success rates, error rates, and latency percentiles for each processor</li>
-<li>Detects when a processor becomes degraded or unhealthy</li>
-<li>Automatically fails over traffic to a healthy backup processor</li>
-<li>Detects recovery and gradually shifts traffic back</li>
-</ul>
-<p><strong>Result:</strong> When your primary processor starts failing, PulseRoute detects it in seconds and routes traffic to your backup — before customers are significantly impacted.</p>
-<h2 id="tier-2-foresight-predictive-failover">Tier 2: Foresight (Predictive Failover)<a class="headerlink" href="#tier-2-foresight-predictive-failover" title="Permanent link">&para;</a></h2>
-<p>Adds predictive capabilities using machine learning. Instead of reacting to failures, Tier 2 anticipates them.</p>
-<p><strong>What it does:</strong></p>
-<ul>
-<li>Analyzes patterns in processor health metrics over time</li>
-<li>Produces a <strong>failure probability</strong> score for each processor</li>
-<li>Triggers pre-emptive routing changes when failure risk is high</li>
-<li>Feeds predictions into Tier 3 for smarter optimization</li>
-</ul>
-<p><strong>Result:</strong> PulseRoute starts shifting traffic away from a processor 30-60 seconds before it fails, preventing dropped transactions entirely.</p>
-<h2 id="tier-3-autopilot-adaptive-optimization">Tier 3: Autopilot (Adaptive Optimization)<a class="headerlink" href="#tier-3-autopilot-adaptive-optimization" title="Permanent link">&para;</a></h2>
-<p>Replaces binary failover with continuous traffic optimization. Instead of "all primary" or "all secondary," Tier 3 dynamically allocates traffic across processors based on real-time performance.</p>
-<p><strong>What it does:</strong></p>
-<ul>
-<li>Continuously learns from transaction outcomes</li>
-<li>Optimizes traffic allocation to maximize overall success rates</li>
-<li>Incorporates Tier 2 failure predictions into routing decisions</li>
-<li>Adapts to changing processor performance automatically</li>
-</ul>
-<p><strong>Result:</strong> PulseRoute finds the optimal traffic split across your processors and continuously adjusts it — even when no processor is "failing," it routes more traffic to whichever processor is performing best.</p>
-<h2 id="how-the-tiers-work-together">How the Tiers Work Together<a class="headerlink" href="#how-the-tiers-work-together" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>Transaction outcome reported
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>        │
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>        ▼
-<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>  ┌─────────────┐
-<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>  │  Tier 1      │  Is the processor healthy?
-<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>  │  Sentinel    │  Success rate, latency, error patterns
-<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>  └──────┬───────┘
-<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>         │
-<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>         ▼
-<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>  ┌─────────────┐
-<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>  │  Tier 2      │  Will it stay healthy?
-<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>  │  Foresight   │  Failure probability prediction
-<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>  └──────┬───────┘
-<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>         │
-<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>         ▼
-<a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a>  ┌─────────────┐
-<a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a>  │  Tier 3      │  What&#39;s the optimal traffic split?
-<a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a>  │  Autopilot   │  Adaptive weight allocation
-<a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a>  └──────┬───────┘
-<a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a>         │
-<a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a>         ▼
-<a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a>  Routing Decision
-<a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a>  (processor + weight)
+<h2 id="simulation-results">Simulation Results<a class="headerlink" href="#simulation-results" title="Permanent link">&para;</a></h2>
+<p>We run continuous simulations against realistic processor failure scenarios. Here are the results:</p>
+<h3 id="scenario-1-sudden-processor-outage">Scenario 1: Sudden Processor Outage<a class="headerlink" href="#scenario-1-sudden-processor-outage" title="Permanent link">&para;</a></h3>
+<p>A processor goes from healthy to full outage. 500 transactions over the incident window.</p>
+<table>
+<thead>
+<tr>
+<th>Metric</th>
+<th>Without PulseRoute</th>
+<th>With PulseRoute (Tier 1)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Success rate</td>
+<td>~70%</td>
+<td>~90%</td>
+</tr>
+<tr>
+<td>Failed transactions</td>
+<td>~150</td>
+<td>~50</td>
+</tr>
+<tr>
+<td>Detection time</td>
+<td>Manual (15-30 min)</td>
+<td>Automatic (&lt;30 sec)</td>
+</tr>
+<tr>
+<td>Recovery</td>
+<td>Manual</td>
+<td>Automatic</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Result: ~100 rescued transactions per incident.</strong></p>
+<h3 id="scenario-2-gradual-degradation">Scenario 2: Gradual Degradation<a class="headerlink" href="#scenario-2-gradual-degradation" title="Permanent link">&para;</a></h3>
+<p>A processor slowly degrades over minutes before full outage. 600 transactions. This is the harder case — latency creeps up, error rates inch higher, but nothing screams "outage" until it's too late.</p>
+<table>
+<thead>
+<tr>
+<th>Metric</th>
+<th>Without PulseRoute</th>
+<th>With PulseRoute (Tier 1)</th>
+<th>With Prediction (Tier 2)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Success rate</td>
+<td>~82%</td>
+<td>~88%</td>
+<td>~92%</td>
+</tr>
+<tr>
+<td>Failed transactions</td>
+<td>~108</td>
+<td>~72</td>
+<td>~48</td>
+</tr>
+<tr>
+<td>Detection</td>
+<td>Never (gradual)</td>
+<td>After threshold breach</td>
+<td>Before threshold breach</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Result: Tier 2 prediction catches the degradation pattern 30-60 seconds before error rates cross the failover threshold.</strong></p>
+<h3 id="scenario-3-continuous-optimization">Scenario 3: Continuous Optimization<a class="headerlink" href="#scenario-3-continuous-optimization" title="Permanent link">&para;</a></h3>
+<p>Both processors are healthy but performing differently. 900 transactions with alternating degradation periods.</p>
+<table>
+<thead>
+<tr>
+<th>Metric</th>
+<th>Static Routing</th>
+<th>PulseRoute Tier 3 (Autopilot)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Success rate</td>
+<td>~88%</td>
+<td>~94%</td>
+</tr>
+<tr>
+<td>Traffic allocation</td>
+<td>Fixed 90/10</td>
+<td>Dynamic, follows performance</td>
+</tr>
+<tr>
+<td>Adaptation</td>
+<td>None</td>
+<td>Continuous</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Result: Even when nothing is "broken," adaptive routing improves success rates by continuously favoring the better-performing processor.</strong></p>
+<h2 id="revenue-impact">Revenue Impact<a class="headerlink" href="#revenue-impact" title="Permanent link">&para;</a></h2>
+<p>For a business processing 100,000 transactions/month at $75 average order value:</p>
+<table>
+<thead>
+<tr>
+<th>Scenario</th>
+<th>Failed Txns Rescued</th>
+<th>Revenue Saved</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1 outage/month (sudden)</td>
+<td>~100</td>
+<td>$7,500</td>
+</tr>
+<tr>
+<td>2 degradation events/month</td>
+<td>~120</td>
+<td>$9,000</td>
+</tr>
+<tr>
+<td>Continuous optimization</td>
+<td>~600</td>
+<td>$45,000</td>
+</tr>
+<tr>
+<td><strong>Combined monthly impact</strong></td>
+<td><strong>~820</strong></td>
+<td><strong>~$61,500</strong></td>
+</tr>
+</tbody>
+</table>
+<p>These are conservative estimates from simulation data. Actual impact depends on your transaction volume, processor reliability, and average order value.</p>
+<h2 id="reactive-vs-predictive-timeline">Reactive vs. Predictive Timeline<a class="headerlink" href="#reactive-vs-predictive-timeline" title="Permanent link">&para;</a></h2>
+<p>Here's what the detection timeline looks like for a gradual degradation event:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>Time ──────────────────────────────────────────────────────►
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>         Degradation       Error rate        Full
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>         begins            hits 10%          outage
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>            │                 │                │
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>            ▼                 ▼                ▼
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>Processor:  ████████████████████████████████████░░░░░░░░░░░░
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>            healthy    degrading    degraded    outage
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>Tier 2:     ·····▓▓▓▓▓▓▓▓▓▓▓▓░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>                  ↑ Prediction triggers
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>                  │ pre-emptive shift
+<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>                  │ (~30-60 sec early)
+<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>
+<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>Tier 1:     ·····················▓▓▓▓▓▓░░░░░░░░░░░░░░░░░░░░
+<a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a>                                 ↑ Threshold triggers
+<a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a>                                 │ reactive failover
+<a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a>
+<a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a>Manual:     ·····································▓▓▓▓▓▓░░░░░
+<a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a>                                                 ↑ Alert fires
+<a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a>                                                 │ engineer responds
+<a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a>
+<a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a>            ████ = healthy traffic  ▓▓▓ = traffic shifting  ░░░ = failed over
 </code></pre></div>
-<p>Each tier builds on the previous one. You can start with Tier 1 and enable higher tiers as you gain confidence.</p>
-<h2 id="routing-rules">Routing Rules<a class="headerlink" href="#routing-rules" title="Permanent link">&para;</a></h2>
-<p>PulseRoute uses a rule-based system to match transactions to processor pairs. Rules are defined by transaction attributes:</p>
+<p>The gap between Tier 2 and Tier 1 detection is where PulseRoute saves the most transactions — failures that happen after degradation starts but before error rates are obviously bad enough to trigger traditional monitoring.</p>
+<h2 id="shadow-mode-see-before-you-commit">Shadow Mode: See Before You Commit<a class="headerlink" href="#shadow-mode-see-before-you-commit" title="Permanent link">&para;</a></h2>
+<p>Not convinced? Run PulseRoute in shadow mode first. It observes your real production traffic without changing any routing decisions, then generates a report showing:</p>
 <ul>
-<li><strong>Country</strong> — where the transaction originates (US, GB, etc.)</li>
-<li><strong>Currency</strong> — the payment currency (USD, EUR, etc.)</li>
-<li><strong>Payment method</strong> — card, wallet, bank transfer, etc.</li>
+<li>How many transactions it <strong>would have</strong> routed differently</li>
+<li>How many failures it <strong>would have</strong> prevented</li>
+<li>The estimated <strong>revenue impact</strong> based on your average order value</li>
 </ul>
-<p>You can define rules as specific as "US + USD + Visa → Stripe primary, Adyen backup" or as broad as "all transactions → Stripe primary, Adyen backup." More specific rules take priority over general ones.</p>
-<p>The <a href="../quickstart/">onboarding wizard</a> or <code>POST /v1/onboard</code> endpoint auto-generates rules from your processor capabilities.</p>
-<h2 id="multi-tenancy">Multi-Tenancy<a class="headerlink" href="#multi-tenancy" title="Permanent link">&para;</a></h2>
-<p>PulseRoute supports multi-tenant deployments with full data isolation between tenants. Each tenant has completely separate routing rules, health metrics, predictions, and webhooks. Tenants share the same PulseRoute deployment for operational simplicity.</p>
-<p>See <a href="../deployment/">Deployment</a> for configuration details.</p>
-<h2 id="runtime-configuration">Runtime Configuration<a class="headerlink" href="#runtime-configuration" title="Permanent link">&para;</a></h2>
-<p>Tiers can be toggled at runtime without restart:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1"># Disable prediction (drop to Tier 1)</span>
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span>/v1/config/tiers<span class="w"> </span>-d<span class="w"> </span><span class="s1">&#39;{&quot;prediction_enabled&quot;: false}&#39;</span>
-<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
-<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="c1"># Disable bandit (drop to Tier 2)</span>
-<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span>/v1/config/tiers<span class="w"> </span>-d<span class="w"> </span><span class="s1">&#39;{&quot;bandit_enabled&quot;: false}&#39;</span>
-<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>
-<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="c1"># Check current tier</span>
-<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>curl<span class="w"> </span>/v1/config/tiers
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1"># Check the shadow mode report after a few days</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>curl<span class="w"> </span>https://api.yourcompany.com/v1/shadow-report?average_order_value<span class="o">=</span><span class="m">75</span>
 </code></pre></div>
-<h2 id="shadow-mode">Shadow Mode<a class="headerlink" href="#shadow-mode" title="Permanent link">&para;</a></h2>
-<p>Before going live, run PulseRoute in <strong>shadow mode</strong>. In this mode, PulseRoute observes your traffic and computes routing decisions, but doesn't change how your system actually routes payments.</p>
-<p>After running in shadow mode, check the comparison report:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>curl<span class="w"> </span>/v1/shadow-report?average_order_value<span class="o">=</span><span class="m">75</span>
-</code></pre></div>
-<p>The report shows:
-- How many transactions PulseRoute would have routed differently
-- How many failures it would have prevented
-- Estimated revenue impact based on your average order value</p>
-<p>This gives you concrete data on PulseRoute's value before you flip the switch.</p>
+<p>No risk, no code changes to your routing logic. Just data.</p>
 
 
 

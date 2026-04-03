@@ -1,0 +1,1435 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Predictive payment routing engine">
+      
+      
+      
+        <link rel="canonical" href="https://pulseroute.dev/faq/">
+      
+      
+        <link rel="prev" href="../observability/">
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>FAQ - PulseRoute</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="amber">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#faq" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="PulseRoute" class="md-header__button md-logo" aria-label="PulseRoute" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            PulseRoute
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              FAQ
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="amber"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="amber"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="PulseRoute" class="md-nav__button md-logo" aria-label="PulseRoute" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    PulseRoute
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../why-pulseroute/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Why PulseRoute
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../how-detection-works/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    How Detection Works
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Architecture
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../benchmarks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Benchmarks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../comparison/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Comparison
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../quickstart/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Getting Started
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../integration-guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Integration Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-reference/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    API Reference
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sdk/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Python SDK
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../node-sdk/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Node.js SDK
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../deployment/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Deployment
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../observability/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Observability
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    FAQ
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    FAQ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#performance-reliability" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Performance &amp; Reliability
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Performance &amp; Reliability">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#does-pulseroute-add-latency-to-my-payment-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Does PulseRoute add latency to my payment flow?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-happens-if-pulseroute-goes-down" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What happens if PulseRoute goes down?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-fast-does-pulseroute-detect-failures" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How fast does PulseRoute detect failures?
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#security-compliance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Security &amp; Compliance
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Security &amp; Compliance">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#do-you-touch-cardholder-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Do you touch cardholder data?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#is-pulseroute-pci-compliant" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Is PulseRoute PCI compliant?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-is-tenant-data-isolated" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How is tenant data isolated?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-do-you-handle-api-key-security" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How do you handle API key security?
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Integration
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Integration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-long-does-integration-take" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How long does integration take?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#which-processors-do-you-support" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Which processors do you support?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#which-languages-do-you-support" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Which languages do you support?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#can-i-use-pulseroute-with-my-existing-payment-orchestration-platform" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Can I use PulseRoute with my existing payment orchestration platform?
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getting-started" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Getting Started
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Getting Started">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-long-until-i-see-value" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How long until I see value?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#whats-the-pricing-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What's the pricing model?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#can-i-try-it-without-affecting-production" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Can I try it without affecting production?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#do-i-need-to-change-my-database-or-infrastructure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Do I need to change my database or infrastructure?
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#operations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Operations
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Operations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-do-i-monitor-pulseroute-itself" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How do I monitor PulseRoute itself?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#can-i-tune-the-failover-thresholds" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Can I tune the failover thresholds?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-if-both-processors-are-unhealthy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What if both processors are unhealthy?
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#performance-reliability" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Performance &amp; Reliability
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Performance &amp; Reliability">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#does-pulseroute-add-latency-to-my-payment-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Does PulseRoute add latency to my payment flow?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-happens-if-pulseroute-goes-down" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What happens if PulseRoute goes down?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-fast-does-pulseroute-detect-failures" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How fast does PulseRoute detect failures?
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#security-compliance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Security &amp; Compliance
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Security &amp; Compliance">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#do-you-touch-cardholder-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Do you touch cardholder data?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#is-pulseroute-pci-compliant" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Is PulseRoute PCI compliant?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-is-tenant-data-isolated" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How is tenant data isolated?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-do-you-handle-api-key-security" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How do you handle API key security?
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Integration
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Integration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-long-does-integration-take" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How long does integration take?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#which-processors-do-you-support" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Which processors do you support?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#which-languages-do-you-support" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Which languages do you support?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#can-i-use-pulseroute-with-my-existing-payment-orchestration-platform" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Can I use PulseRoute with my existing payment orchestration platform?
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getting-started" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Getting Started
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Getting Started">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-long-until-i-see-value" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How long until I see value?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#whats-the-pricing-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What's the pricing model?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#can-i-try-it-without-affecting-production" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Can I try it without affecting production?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#do-i-need-to-change-my-database-or-infrastructure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Do I need to change my database or infrastructure?
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#operations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Operations
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Operations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-do-i-monitor-pulseroute-itself" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How do I monitor PulseRoute itself?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#can-i-tune-the-failover-thresholds" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Can I tune the failover thresholds?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-if-both-processors-are-unhealthy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What if both processors are unhealthy?
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="faq">FAQ<a class="headerlink" href="#faq" title="Permanent link">&para;</a></h1>
+<h2 id="performance-reliability">Performance &amp; Reliability<a class="headerlink" href="#performance-reliability" title="Permanent link">&para;</a></h2>
+<h3 id="does-pulseroute-add-latency-to-my-payment-flow">Does PulseRoute add latency to my payment flow?<a class="headerlink" href="#does-pulseroute-add-latency-to-my-payment-flow" title="Permanent link">&para;</a></h3>
+<p>Negligible. The routing decision is a single HTTP call that resolves in 1-5ms in a colocated deployment. For context, a typical Stripe charge takes 300-800ms — PulseRoute adds less than 1% to that.</p>
+<p>The SDK also caches the last routing decision locally. If PulseRoute is temporarily unreachable, the cached decision is returned instantly with zero added latency.</p>
+<h3 id="what-happens-if-pulseroute-goes-down">What happens if PulseRoute goes down?<a class="headerlink" href="#what-happens-if-pulseroute-goes-down" title="Permanent link">&para;</a></h3>
+<p>Your payments continue unaffected. The SDK is designed for resilience:</p>
+<ol>
+<li><strong>Local cache</strong>: The SDK caches the last routing decision. If the API is unreachable, it returns the cached decision immediately.</li>
+<li><strong>Fire-and-forget outcomes</strong>: Outcome reports are buffered in memory and flushed asynchronously. If the API is down, outcomes are queued and sent when connectivity returns.</li>
+<li><strong>Graceful degradation</strong>: If PulseRoute is completely unavailable and has no cached decision, your application falls back to its default routing logic.</li>
+</ol>
+<p>PulseRoute is an intelligence layer, not a hard dependency. Your payment processing never blocks on PulseRoute availability.</p>
+<h3 id="how-fast-does-pulseroute-detect-failures">How fast does PulseRoute detect failures?<a class="headerlink" href="#how-fast-does-pulseroute-detect-failures" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Sudden outage</strong> (processor goes completely down): 5-15 seconds</li>
+<li><strong>Gradual degradation</strong> (error rate climbing slowly): 15-30 seconds with Tier 1, or 30-60 seconds <em>early</em> with Tier 2 prediction</li>
+<li><strong>Predictive detection</strong> (Tier 2): Detects degradation patterns before error rates visibly spike, typically 30-60 seconds ahead of threshold-based detection</li>
+</ul>
+<p>Detection speed scales with your transaction volume — more transactions per second means more data points per evaluation cycle, which means faster detection.</p>
+<h2 id="security-compliance">Security &amp; Compliance<a class="headerlink" href="#security-compliance" title="Permanent link">&para;</a></h2>
+<h3 id="do-you-touch-cardholder-data">Do you touch cardholder data?<a class="headerlink" href="#do-you-touch-cardholder-data" title="Permanent link">&para;</a></h3>
+<p>Never. PulseRoute only processes routing metadata:</p>
+<ul>
+<li>Processor IDs (e.g., "stripe", "adyen")</li>
+<li>Transaction results (success or failure)</li>
+<li>Latency (e.g., 145ms)</li>
+<li>Error codes (e.g., "timeout", "declined")</li>
+<li>Routing context (country, currency, payment method)</li>
+</ul>
+<p>PulseRoute has no access to card numbers, cardholder names, addresses, transaction amounts, or any personally identifiable information. It's designed to operate entirely outside the PCI cardholder data environment (CDE).</p>
+<h3 id="is-pulseroute-pci-compliant">Is PulseRoute PCI compliant?<a class="headerlink" href="#is-pulseroute-pci-compliant" title="Permanent link">&para;</a></h3>
+<p>PulseRoute is designed to operate outside the PCI-DSS scope. Since we don't process, store, or transmit cardholder data, PulseRoute does not increase your PCI compliance burden. Our SDK integration points are positioned around your payment flow (before and after), not within it.</p>
+<h3 id="how-is-tenant-data-isolated">How is tenant data isolated?<a class="headerlink" href="#how-is-tenant-data-isolated" title="Permanent link">&para;</a></h3>
+<p>Each tenant has a completely separate data namespace. Routing rules, health metrics, predictions, bandit weights, and webhooks are fully isolated between tenants. There is no cross-tenant data access.</p>
+<h3 id="how-do-you-handle-api-key-security">How do you handle API key security?<a class="headerlink" href="#how-do-you-handle-api-key-security" title="Permanent link">&para;</a></h3>
+<p>API keys are transmitted via HTTP headers (never in URLs), and all API communication uses TLS. We recommend rotating keys periodically and using separate keys for production and staging environments.</p>
+<h2 id="integration">Integration<a class="headerlink" href="#integration" title="Permanent link">&para;</a></h2>
+<h3 id="how-long-does-integration-take">How long does integration take?<a class="headerlink" href="#how-long-does-integration-take" title="Permanent link">&para;</a></h3>
+<p>Most teams complete integration in 1-2 hours:</p>
+<ol>
+<li><strong>15 minutes</strong>: Run the onboarding wizard or call <code>POST /v1/onboard</code> to configure your processors and rules</li>
+<li><strong>30 minutes</strong>: Add the SDK to your payment flow (3 lines of code: init, getRoute, reportOutcome)</li>
+<li><strong>15 minutes</strong>: Verify with a few test transactions</li>
+<li><strong>Optional</strong>: Set up webhooks for alerting, connect Grafana dashboard</li>
+</ol>
+<h3 id="which-processors-do-you-support">Which processors do you support?<a class="headerlink" href="#which-processors-do-you-support" title="Permanent link">&para;</a></h3>
+<p>All of them. PulseRoute is processor-agnostic — it routes traffic between any payment processors you use. Common setups include:</p>
+<ul>
+<li>Stripe + Adyen</li>
+<li>Braintree + Stripe</li>
+<li>Checkout.com + Adyen</li>
+<li>Worldpay + Stripe</li>
+</ul>
+<p>You define the processor topology; PulseRoute handles the routing intelligence.</p>
+<h3 id="which-languages-do-you-support">Which languages do you support?<a class="headerlink" href="#which-languages-do-you-support" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Node.js</strong>: Full SDK with TypeScript types, local caching, and outcome buffering</li>
+<li><strong>Python</strong>: SDK with sync and async support</li>
+<li><strong>Java</strong>: Integration via REST API (code examples provided)</li>
+<li><strong>Any language</strong>: Full REST API available for direct integration</li>
+</ul>
+<h3 id="can-i-use-pulseroute-with-my-existing-payment-orchestration-platform">Can I use PulseRoute with my existing payment orchestration platform?<a class="headerlink" href="#can-i-use-pulseroute-with-my-existing-payment-orchestration-platform" title="Permanent link">&para;</a></h3>
+<p>Yes. PulseRoute is a routing intelligence layer, not a payment orchestration platform. It tells you which processor to use — your orchestration platform handles the actual payment processing. Integrate PulseRoute as the decision-maker upstream of your orchestration layer.</p>
+<h2 id="getting-started">Getting Started<a class="headerlink" href="#getting-started" title="Permanent link">&para;</a></h2>
+<h3 id="how-long-until-i-see-value">How long until I see value?<a class="headerlink" href="#how-long-until-i-see-value" title="Permanent link">&para;</a></h3>
+<p>Start in <strong>shadow mode</strong> (recommended). PulseRoute observes your traffic and computes routing decisions without changing anything. Within 1-2 weeks of shadow mode observation, check the shadow report:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>curl<span class="w"> </span>/v1/shadow-report?average_order_value<span class="o">=</span><span class="m">75</span>
+</code></pre></div>
+<p>This shows exactly how many transactions PulseRoute would have routed differently, how many failures it would have prevented, and the estimated revenue impact. You'll have concrete data on PulseRoute's value before changing a single routing decision.</p>
+<h3 id="whats-the-pricing-model">What's the pricing model?<a class="headerlink" href="#whats-the-pricing-model" title="Permanent link">&para;</a></h3>
+<p>Free during beta. After beta, pricing will be usage-based (per routing decision). We'll communicate pricing well in advance of any charges.</p>
+<h3 id="can-i-try-it-without-affecting-production">Can I try it without affecting production?<a class="headerlink" href="#can-i-try-it-without-affecting-production" title="Permanent link">&para;</a></h3>
+<p>Absolutely. There are two ways:</p>
+<ol>
+<li>
+<p><strong>Shadow mode</strong>: Install PulseRoute in your production environment. It observes real traffic and computes decisions, but your existing routing remains unchanged. This gives you the most accurate impact data.</p>
+</li>
+<li>
+<p><strong>Sandbox</strong>: Run PulseRoute locally with Docker Compose and the built-in simulator to see how it handles various failure scenarios. No production traffic involved.</p>
+</li>
+</ol>
+<h3 id="do-i-need-to-change-my-database-or-infrastructure">Do I need to change my database or infrastructure?<a class="headerlink" href="#do-i-need-to-change-my-database-or-infrastructure" title="Permanent link">&para;</a></h3>
+<p>No. PulseRoute runs as a standalone service (single Docker container + Redis). It doesn't require changes to your database, payment tables, or existing infrastructure. The SDK communicates with PulseRoute over HTTP — it's an API call, not an infrastructure migration.</p>
+<h2 id="operations">Operations<a class="headerlink" href="#operations" title="Permanent link">&para;</a></h2>
+<h3 id="how-do-i-monitor-pulseroute-itself">How do I monitor PulseRoute itself?<a class="headerlink" href="#how-do-i-monitor-pulseroute-itself" title="Permanent link">&para;</a></h3>
+<p>PulseRoute exposes Prometheus metrics at <code>/metrics</code> and includes a pre-built Grafana dashboard. Key metrics to watch:</p>
+<ul>
+<li>Processor health status per rule</li>
+<li>Success rates per processor</li>
+<li>Failover events</li>
+<li>Routing decision latency</li>
+<li>Engine tier status</li>
+</ul>
+<p>See <a href="../observability/">Observability</a> for the full metrics reference.</p>
+<h3 id="can-i-tune-the-failover-thresholds">Can I tune the failover thresholds?<a class="headerlink" href="#can-i-tune-the-failover-thresholds" title="Permanent link">&para;</a></h3>
+<p>Yes. All thresholds are configurable:</p>
+<ul>
+<li>When to consider a processor "degraded"</li>
+<li>When to trigger failover</li>
+<li>When to consider a processor "recovered"</li>
+<li>Prediction sensitivity (Tier 2)</li>
+<li>Minimum traffic allocation (Tier 3)</li>
+</ul>
+<p>Tiers can also be toggled at runtime without restart — start with Tier 1 and enable higher tiers when you're ready.</p>
+<h3 id="what-if-both-processors-are-unhealthy">What if both processors are unhealthy?<a class="headerlink" href="#what-if-both-processors-are-unhealthy" title="Permanent link">&para;</a></h3>
+<p>PulseRoute routes to whichever processor is performing least badly. Tier 3 (Autopilot) handles this gracefully by allocating traffic proportionally to each processor's success rate. Even in a dual-degradation scenario, PulseRoute optimizes for the best possible overall success rate.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["content.code.copy", "content.tabs.link", "navigation.sections", "navigation.expand", "navigation.top", "toc.follow"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

@@ -10,13 +10,13 @@
       
       
       
-        <link rel="canonical" href="https://pulseroute.dev/architecture/">
+        <link rel="canonical" href="https://pulseroute.dev/how-detection-works/">
       
       
-        <link rel="prev" href="../how-detection-works/">
+        <link rel="prev" href="../why-pulseroute/">
       
       
-        <link rel="next" href="../benchmarks/">
+        <link rel="next" href="../architecture/">
       
       
         
@@ -27,7 +27,7 @@
     
     
       
-        <title>Architecture - PulseRoute</title>
+        <title>How Detection Works - PulseRoute</title>
       
     
     
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#architecture" class="md-skip">
+        <a href="#how-detection-works" class="md-skip">
           Skip to content
         </a>
       
@@ -114,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Architecture
+              How Detection Works
             
           </span>
         </div>
@@ -287,33 +287,6 @@
       
   
   
-  
-  
-    <li class="md-nav__item">
-      <a href="../how-detection-works/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    How Detection Works
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
     
   
   
@@ -333,7 +306,7 @@
   <span class="md-ellipsis">
     
   
-    Architecture
+    How Detection Works
   
 
     
@@ -351,7 +324,7 @@
   <span class="md-ellipsis">
     
   
-    Architecture
+    How Detection Works
   
 
     
@@ -377,10 +350,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#system-overview" class="md-nav__link">
+  <a href="#multi-signal-health-analysis" class="md-nav__link">
     <span class="md-ellipsis">
       
-        System Overview
+        Multi-Signal Health Analysis
       
     </span>
   </a>
@@ -388,10 +361,60 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#tier-1-sentinel-health-based-failover" class="md-nav__link">
+  <a href="#three-levels-of-intelligence" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Tier 1: Sentinel (Health-Based Failover)
+        Three Levels of Intelligence
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Three Levels of Intelligence">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tier-1-threshold-based-detection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tier 1: Threshold-Based Detection
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tier-2-predictive-detection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tier 2: Predictive Detection
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tier-3-continuous-optimization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tier 3: Continuous Optimization
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-pulseroute-doesnt-do" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What PulseRoute Doesn't Do
       
     </span>
   </a>
@@ -399,76 +422,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#tier-2-foresight-predictive-failover" class="md-nav__link">
+  <a href="#detection-in-practice" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Tier 2: Foresight (Predictive Failover)
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#tier-3-autopilot-adaptive-optimization" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Tier 3: Autopilot (Adaptive Optimization)
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#how-the-tiers-work-together" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        How the Tiers Work Together
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#routing-rules" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Routing Rules
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#multi-tenancy" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Multi-Tenancy
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#runtime-configuration" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Runtime Configuration
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#shadow-mode" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Shadow Mode
+        Detection in Practice
       
     </span>
   </a>
@@ -479,6 +436,33 @@
   
 </nav>
       
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Architecture
+  
+
+    
+  </span>
+  
+  
+
+      </a>
     </li>
   
 
@@ -780,10 +764,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#system-overview" class="md-nav__link">
+  <a href="#multi-signal-health-analysis" class="md-nav__link">
     <span class="md-ellipsis">
       
-        System Overview
+        Multi-Signal Health Analysis
       
     </span>
   </a>
@@ -791,10 +775,60 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#tier-1-sentinel-health-based-failover" class="md-nav__link">
+  <a href="#three-levels-of-intelligence" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Tier 1: Sentinel (Health-Based Failover)
+        Three Levels of Intelligence
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Three Levels of Intelligence">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tier-1-threshold-based-detection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tier 1: Threshold-Based Detection
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tier-2-predictive-detection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tier 2: Predictive Detection
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tier-3-continuous-optimization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tier 3: Continuous Optimization
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-pulseroute-doesnt-do" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What PulseRoute Doesn't Do
       
     </span>
   </a>
@@ -802,76 +836,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#tier-2-foresight-predictive-failover" class="md-nav__link">
+  <a href="#detection-in-practice" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Tier 2: Foresight (Predictive Failover)
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#tier-3-autopilot-adaptive-optimization" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Tier 3: Autopilot (Adaptive Optimization)
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#how-the-tiers-work-together" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        How the Tiers Work Together
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#routing-rules" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Routing Rules
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#multi-tenancy" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Multi-Tenancy
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#runtime-configuration" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Runtime Configuration
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#shadow-mode" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Shadow Mode
+        Detection in Practice
       
     </span>
   </a>
@@ -895,112 +863,76 @@
 
 
 
-<h1 id="architecture">Architecture<a class="headerlink" href="#architecture" title="Permanent link">&para;</a></h1>
-<p>PulseRoute is a 3-tier payment routing engine. Each tier adds intelligence on top of the previous one, and all three can be enabled or disabled at runtime.</p>
-<h2 id="system-overview">System Overview<a class="headerlink" href="#system-overview" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>┌─────────────────────────────────────────────────────────────┐
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>│                      Your Payment Service                    │
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>│                                                              │
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>│   ┌──────────┐     ┌──────────┐     ┌──────────────────┐   │
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>│   │ SDK      │────&gt;│ PulseRoute│────&gt;│ Payment Processor │   │
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>│   │ Client   │&lt;────│ API       │     │ (Stripe, Adyen..) │   │
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>│   └──────────┘     └──────────┘     └──────────────────┘   │
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>│        │                │                                    │
-<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>│        │ report_outcome │ evaluate_all()                     │
-<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>│        └────────────────┘                                    │
-<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>└─────────────────────────────────────────────────────────────┘
-</code></pre></div>
-<p><strong>Pre-transaction:</strong> Your service calls <code>POST /v1/route</code> (or <code>sdk.getRoute()</code>) to get a routing decision. PulseRoute returns which processor to use and a traffic weight.</p>
-<p><strong>Post-transaction:</strong> Your service calls <code>POST /v1/outcome</code> (or <code>sdk.reportOutcome()</code>) with the result. PulseRoute uses this data to continuously improve routing decisions.</p>
-<h2 id="tier-1-sentinel-health-based-failover">Tier 1: Sentinel (Health-Based Failover)<a class="headerlink" href="#tier-1-sentinel-health-based-failover" title="Permanent link">&para;</a></h2>
-<p>The foundation. Monitors processor health in real-time using transaction outcomes.</p>
-<p><strong>What it does:</strong></p>
+<h1 id="how-detection-works">How Detection Works<a class="headerlink" href="#how-detection-works" title="Permanent link">&para;</a></h1>
+<p>PulseRoute monitors multiple dimensions of processor health simultaneously, going far beyond simple uptime checks or error rate thresholds.</p>
+<h2 id="multi-signal-health-analysis">Multi-Signal Health Analysis<a class="headerlink" href="#multi-signal-health-analysis" title="Permanent link">&para;</a></h2>
+<p>Traditional monitoring watches a single metric — usually error rate or uptime. PulseRoute tracks multiple health signals in parallel:</p>
+<p><strong>Success and error patterns:</strong>
+PulseRoute tracks per-processor success rates and error rates over a sliding time window. But unlike simple threshold monitoring, it also watches <em>which</em> errors are occurring. A spike in timeouts means something different than a spike in authentication failures — PulseRoute distinguishes between transient errors and systemic degradation.</p>
+<p><strong>Latency distribution shifts:</strong>
+A processor doesn't go from "healthy" to "dead" instantly. Degradation usually shows up in latency first — p95 and p99 response times creep up while median latency looks normal. PulseRoute monitors the full latency distribution (p50, p95, p99) and detects when the distribution shape changes, catching degradation that average-based monitoring misses entirely.</p>
+<p><strong>Response time variability:</strong>
+Healthy processors have consistent response times. A processor under stress shows increasing variability — some requests return fast, others take 10x longer. PulseRoute tracks this jitter as an early warning signal, often detecting problems before error rates move at all.</p>
+<h2 id="three-levels-of-intelligence">Three Levels of Intelligence<a class="headerlink" href="#three-levels-of-intelligence" title="Permanent link">&para;</a></h2>
+<h3 id="tier-1-threshold-based-detection">Tier 1: Threshold-Based Detection<a class="headerlink" href="#tier-1-threshold-based-detection" title="Permanent link">&para;</a></h3>
+<p>The foundation. PulseRoute continuously evaluates processor health and compares against configurable thresholds:</p>
 <ul>
-<li>Tracks success rates, error rates, and latency percentiles for each processor</li>
-<li>Detects when a processor becomes degraded or unhealthy</li>
-<li>Automatically fails over traffic to a healthy backup processor</li>
-<li>Detects recovery and gradually shifts traffic back</li>
+<li><strong>Healthy</strong>: Processor is performing within normal parameters</li>
+<li><strong>Degraded</strong>: Performance has deteriorated but is still functional</li>
+<li><strong>Failed Over</strong>: Processor has crossed the failure threshold, traffic has been moved</li>
 </ul>
-<p><strong>Result:</strong> When your primary processor starts failing, PulseRoute detects it in seconds and routes traffic to your backup — before customers are significantly impacted.</p>
-<h2 id="tier-2-foresight-predictive-failover">Tier 2: Foresight (Predictive Failover)<a class="headerlink" href="#tier-2-foresight-predictive-failover" title="Permanent link">&para;</a></h2>
-<p>Adds predictive capabilities using machine learning. Instead of reacting to failures, Tier 2 anticipates them.</p>
-<p><strong>What it does:</strong></p>
+<p>When a processor's metrics cross a threshold, PulseRoute automatically shifts traffic to the backup. When the processor recovers, traffic gradually returns.</p>
+<p>This is reactive — it responds to problems after they're measurable. Fast (seconds, not minutes), but still reactive.</p>
+<h3 id="tier-2-predictive-detection">Tier 2: Predictive Detection<a class="headerlink" href="#tier-2-predictive-detection" title="Permanent link">&para;</a></h3>
+<p>This is where PulseRoute goes beyond traditional monitoring.</p>
+<p>Our ML model is trained to recognize the subtle signatures that precede processor outages. It monitors multiple health signals including latency distribution shifts, error code frequency changes, and response time variability. When these signals combine in patterns consistent with impending failure, PulseRoute assigns a <strong>failure probability</strong> to each processor.</p>
+<p>When a processor's failure probability exceeds a configurable risk threshold, PulseRoute begins pre-emptively shifting traffic — typically 30 to 60 seconds before transaction success rates visibly decline.</p>
+<p><strong>Why 30-60 seconds matters:</strong> At 100 transactions per minute, a 30-second early warning prevents 50 failed transactions. At $75 average order value, that's $3,750 saved per incident.</p>
+<p>The model runs inference in microseconds with no external dependencies — no GPU required, no ML framework, no network calls. It's embedded directly in the routing engine.</p>
+<h3 id="tier-3-continuous-optimization">Tier 3: Continuous Optimization<a class="headerlink" href="#tier-3-continuous-optimization" title="Permanent link">&para;</a></h3>
+<p>Tier 3 moves beyond binary failover (all-primary or all-secondary) to <strong>continuous traffic optimization</strong>.</p>
+<p>Instead of waiting for a processor to fail, Tier 3 continuously adjusts the traffic split based on real-time performance. If Processor A has a 98% success rate and Processor B has 96%, Tier 3 will route slightly more traffic to A — without any hard failover.</p>
+<p>When combined with Tier 2 predictions, Tier 3 makes routing decisions that account for both current performance and predicted future performance. A processor that's healthy now but showing early degradation signals will receive less traffic, even before it crosses any threshold.</p>
+<p>Key behaviors:
+- <strong>Gradual, not binary</strong>: Traffic shifts smoothly, avoiding the thundering herd problem of sudden cutover
+- <strong>Self-balancing</strong>: Continuously adapts to changing processor performance
+- <strong>Exploration</strong>: Always sends a small percentage of traffic to the secondary processor, ensuring it has fresh data if it needs to failover
+- <strong>Fast adaptation</strong>: Weights recent observations more heavily than historical ones, tracking real-time conditions</p>
+<h2 id="what-pulseroute-doesnt-do">What PulseRoute Doesn't Do<a class="headerlink" href="#what-pulseroute-doesnt-do" title="Permanent link">&para;</a></h2>
+<p>It's important to be clear about boundaries:</p>
 <ul>
-<li>Analyzes patterns in processor health metrics over time</li>
-<li>Produces a <strong>failure probability</strong> score for each processor</li>
-<li>Triggers pre-emptive routing changes when failure risk is high</li>
-<li>Feeds predictions into Tier 3 for smarter optimization</li>
+<li><strong>PulseRoute doesn't touch payment data.</strong> It only sees routing metadata: processor IDs, success/failure flags, latency, and error codes. No card numbers, no amounts, no PII.</li>
+<li><strong>PulseRoute doesn't make payment decisions.</strong> It recommends which processor to use. Your system makes the final routing decision and processes the payment.</li>
+<li><strong>PulseRoute doesn't replace your payment infrastructure.</strong> It's an intelligence layer that sits alongside your existing payment flow, making it more resilient.</li>
 </ul>
-<p><strong>Result:</strong> PulseRoute starts shifting traffic away from a processor 30-60 seconds before it fails, preventing dropped transactions entirely.</p>
-<h2 id="tier-3-autopilot-adaptive-optimization">Tier 3: Autopilot (Adaptive Optimization)<a class="headerlink" href="#tier-3-autopilot-adaptive-optimization" title="Permanent link">&para;</a></h2>
-<p>Replaces binary failover with continuous traffic optimization. Instead of "all primary" or "all secondary," Tier 3 dynamically allocates traffic across processors based on real-time performance.</p>
-<p><strong>What it does:</strong></p>
-<ul>
-<li>Continuously learns from transaction outcomes</li>
-<li>Optimizes traffic allocation to maximize overall success rates</li>
-<li>Incorporates Tier 2 failure predictions into routing decisions</li>
-<li>Adapts to changing processor performance automatically</li>
-</ul>
-<p><strong>Result:</strong> PulseRoute finds the optimal traffic split across your processors and continuously adjusts it — even when no processor is "failing," it routes more traffic to whichever processor is performing best.</p>
-<h2 id="how-the-tiers-work-together">How the Tiers Work Together<a class="headerlink" href="#how-the-tiers-work-together" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>Transaction outcome reported
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>        │
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>        ▼
-<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>  ┌─────────────┐
-<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>  │  Tier 1      │  Is the processor healthy?
-<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>  │  Sentinel    │  Success rate, latency, error patterns
-<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>  └──────┬───────┘
-<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>         │
-<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>         ▼
-<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>  ┌─────────────┐
-<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>  │  Tier 2      │  Will it stay healthy?
-<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>  │  Foresight   │  Failure probability prediction
-<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>  └──────┬───────┘
-<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>         │
-<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>         ▼
-<a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a>  ┌─────────────┐
-<a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a>  │  Tier 3      │  What&#39;s the optimal traffic split?
-<a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a>  │  Autopilot   │  Adaptive weight allocation
-<a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a>  └──────┬───────┘
-<a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a>         │
-<a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a>         ▼
-<a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a>  Routing Decision
-<a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a>  (processor + weight)
+<h2 id="detection-in-practice">Detection in Practice<a class="headerlink" href="#detection-in-practice" title="Permanent link">&para;</a></h2>
+<p>Here's what happens during a real degradation event:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>Timeline:
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>─────────────────────────────────────────────────────────────►
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>t=0      Processor A starts responding slower.
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>         Error rate: 2% (normal). p95 latency: up 40%.
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>t=15s    Tier 2 failure probability rises to 0.45.
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>         Not yet critical, but PulseRoute is watching.
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>t=30s    p95 latency up 80%. Error rate: 5%. Jitter increasing.
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>         Tier 2 probability: 0.72 — exceeds threshold.
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>         Tier 3 begins shifting traffic: 70% A → 55% A.
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>t=45s    Error rate hits 12%. Still below Tier 1 failover threshold.
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>         Tier 3 has shifted to 30% A, 70% B.
+<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>         Most transactions are already on the healthy processor.
+<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>
+<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>t=60s    Error rate hits 30%. Tier 1 threshold breached.
+<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>         Tier 3 is now at 5% A, 95% B.
+<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>         By the time traditional monitoring would alert,
+<a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a>         PulseRoute has already moved 95% of traffic.
+<a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a>
+<a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a>t=90s    Processor A enters full outage.
+<a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a>         Impact: minimal — only 5% of traffic was still on A.
 </code></pre></div>
-<p>Each tier builds on the previous one. You can start with Tier 1 and enable higher tiers as you gain confidence.</p>
-<h2 id="routing-rules">Routing Rules<a class="headerlink" href="#routing-rules" title="Permanent link">&para;</a></h2>
-<p>PulseRoute uses a rule-based system to match transactions to processor pairs. Rules are defined by transaction attributes:</p>
-<ul>
-<li><strong>Country</strong> — where the transaction originates (US, GB, etc.)</li>
-<li><strong>Currency</strong> — the payment currency (USD, EUR, etc.)</li>
-<li><strong>Payment method</strong> — card, wallet, bank transfer, etc.</li>
-</ul>
-<p>You can define rules as specific as "US + USD + Visa → Stripe primary, Adyen backup" or as broad as "all transactions → Stripe primary, Adyen backup." More specific rules take priority over general ones.</p>
-<p>The <a href="../quickstart/">onboarding wizard</a> or <code>POST /v1/onboard</code> endpoint auto-generates rules from your processor capabilities.</p>
-<h2 id="multi-tenancy">Multi-Tenancy<a class="headerlink" href="#multi-tenancy" title="Permanent link">&para;</a></h2>
-<p>PulseRoute supports multi-tenant deployments with full data isolation between tenants. Each tenant has completely separate routing rules, health metrics, predictions, and webhooks. Tenants share the same PulseRoute deployment for operational simplicity.</p>
-<p>See <a href="../deployment/">Deployment</a> for configuration details.</p>
-<h2 id="runtime-configuration">Runtime Configuration<a class="headerlink" href="#runtime-configuration" title="Permanent link">&para;</a></h2>
-<p>Tiers can be toggled at runtime without restart:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1"># Disable prediction (drop to Tier 1)</span>
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span>/v1/config/tiers<span class="w"> </span>-d<span class="w"> </span><span class="s1">&#39;{&quot;prediction_enabled&quot;: false}&#39;</span>
-<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
-<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="c1"># Disable bandit (drop to Tier 2)</span>
-<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span>/v1/config/tiers<span class="w"> </span>-d<span class="w"> </span><span class="s1">&#39;{&quot;bandit_enabled&quot;: false}&#39;</span>
-<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>
-<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="c1"># Check current tier</span>
-<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>curl<span class="w"> </span>/v1/config/tiers
-</code></pre></div>
-<h2 id="shadow-mode">Shadow Mode<a class="headerlink" href="#shadow-mode" title="Permanent link">&para;</a></h2>
-<p>Before going live, run PulseRoute in <strong>shadow mode</strong>. In this mode, PulseRoute observes your traffic and computes routing decisions, but doesn't change how your system actually routes payments.</p>
-<p>After running in shadow mode, check the comparison report:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>curl<span class="w"> </span>/v1/shadow-report?average_order_value<span class="o">=</span><span class="m">75</span>
-</code></pre></div>
-<p>The report shows:
-- How many transactions PulseRoute would have routed differently
-- How many failures it would have prevented
-- Estimated revenue impact based on your average order value</p>
-<p>This gives you concrete data on PulseRoute's value before you flip the switch.</p>
+<p>Without PulseRoute, you'd discover the outage at t=60s (if you have good monitoring) or t=5min+ (if you rely on customer complaints). All traffic would be on the failing processor until someone manually intervenes.</p>
 
 
 
